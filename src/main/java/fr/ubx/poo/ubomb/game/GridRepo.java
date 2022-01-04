@@ -22,6 +22,10 @@ public abstract class GridRepo {
         switch (entityCode) {
             case Empty:
                 return null;
+            case Box:
+                return new Box(pos);
+            case Heart:
+                return new Heart(pos);
             case Stone:
                 return new Stone(pos);
             case Tree:

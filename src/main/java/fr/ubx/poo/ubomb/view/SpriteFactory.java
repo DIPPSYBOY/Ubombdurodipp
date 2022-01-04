@@ -19,6 +19,10 @@ public final class SpriteFactory {
             return new Sprite(layer, STONE.getImage(), gameObject);
         if (gameObject instanceof Tree)
             return new Sprite(layer, TREE.getImage(), gameObject);
+        if (gameObject instanceof Box)
+            return new Sprite(layer, BOX.getImage(), gameObject);
+        if (gameObject instanceof Heart)
+            return new Sprite(layer, HEART.getImage(), gameObject);
         if (gameObject instanceof Key)
             return new Sprite(layer, KEY.getImage(), gameObject);
         throw new RuntimeException("Unsupported sprite for decor " + gameObject);
