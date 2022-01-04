@@ -27,6 +27,14 @@ public class Grid {
         return height;
     }
 
+    public boolean isEmpty(Position position) {
+        return elements.get(position) == null;
+    }
+/*
+    public boolean isInside(Position position) {
+        return position.x < dimension.width && position.x >= 0 && position.y < (dimension.height) && position.y >= 0;// to update
+    }
+*/
     public Decor get(Position position) {
         return elements.get(position);
     }
